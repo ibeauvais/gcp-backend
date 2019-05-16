@@ -2,9 +2,9 @@
   "name": "computeengine-hello",
   "version": "0.0.0",
   "private": true,
-  "scripts": {
-  },
+  "scripts": {},
   "dependencies": {
-    "express": "~4.16.0"
+    "express": "~4.16.0",
+    "morgan": "^1.9.1"
   }
 }
