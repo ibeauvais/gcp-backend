@@ -1,0 +1,13 @@
+resources:
+
+  - name: {{ env['project'] }}-terraform-state-bucket
+    type: storage.v1.bucket
+    properties:
+      location: europe-west1
+      storageClass: regional
+  - name: {{ env['project'] }}-service-enable-resource-manager
+    action: gcp-types/servicemanagement-v1:servicemanagement.services.enable
+    properties:
+      consumerId: "project:{{ env['project'] }}"
+      serviceName: cloudresourcemanager.googleapis.com
+

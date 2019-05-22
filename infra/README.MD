@@ -1,0 +1,5 @@
+- create project
+- export CURRENT_PROJECT='$new_project_name'
+- make init_project
+- make init
+- make apply
